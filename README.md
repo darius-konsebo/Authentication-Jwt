@@ -172,6 +172,7 @@ POST /api/auth/login
   "token": "eyJhbGciOiJIUzI1NiJ9..."
 }
 ```
+![Image1](screenshots/Test_login.png)
 
 ### **2. Test d’un endpoint protégé**
 
@@ -194,8 +195,11 @@ Authorization: Bearer <TOKEN_RECU>
   "message": "Bonjour, endpoint protégé OK "
 }
 ```
+![Image2](screenshots/Test_token.png)
 
 Si le token est absent ou invalide → **403 Forbidden**
+![Image3](screenshots/Modif_token.png)
+
 Si expiré → **403 Forbidden** avec message de refus du filtre.
 
 ---
